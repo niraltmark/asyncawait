@@ -6,13 +6,14 @@ var io = require('socket.io')(http);
 var port = process.env.PORT || 3000;
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/app/views/index.html');
 });
 
 const sockets = [];
 
 io.on('connection', function(socket){
-  sockets.push(socket);
+  io.emit('chat message', 'hello everyone');
+  
   socket.on('chat message', function(msg){
     io.emit('chat message', msg);
   });

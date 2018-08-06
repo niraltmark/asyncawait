@@ -1,0 +1,27 @@
+{
+  "name": "asyncawait",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niraltmark/asyncawait.git"
+  },
+  "author": "Nir Altmark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niraltmark/asyncawait/issues"
+  },
+  "homepage": "https://github.com/niraltmark/asyncawait#readme"
+}
